@@ -21,7 +21,7 @@ Simple transaction notes with Express
 1. Clone this project
 
 ```bash
-git clone https://github.com/rfauzi44/theauth-api.git
+git clone https://github.com/rfauzi44/transaction-journal-api.git
 ```
 
 2. Create .env file (copy and set from .env.example)
