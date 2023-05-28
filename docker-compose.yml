@@ -1,0 +1,28 @@
+services:
+  database:
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=${DATABASE}
+      - POSTGRES_USER=${USER}
+      - POSTGRES_PASSWORD=${PASSWORD}
+    networks:
+      - tj-networks
+
+      
+  backend-api:
+    image: rfauzi/tj-api:latest
+    depends_on:
+      - database
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
+    networks:
+      - tj-networks
+
+networks:
+  tj-networks:
+    driver: bridge
