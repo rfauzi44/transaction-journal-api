@@ -1,6 +1,6 @@
 # Transaction Journal API
 
-Simple transaction notes app with Express
+Simple transaction notes with Express
 
 ## 🔥 Showcase
 
