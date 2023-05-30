@@ -57,7 +57,7 @@ npx sequelize-cli db:migrate
 
 5. [ OPTIONAL ] Running Seeds for transactions and items table
 
-Make sure you have create account 
+[REQUIRED] Make sure you have create one user account 
 
 ```bash
 npx sequelize-cli db:seed:all
