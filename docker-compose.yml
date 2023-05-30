@@ -4,9 +4,9 @@ services:
     ports:
       - "5433:5432"
     environment:
-      - POSTGRES_DB=${DATABASE}
-      - POSTGRES_USER=${USER}
-      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     networks:
       - tj-networks
 
@@ -17,7 +17,7 @@ services:
       - database
     restart: unless-stopped
     ports:
-      - "3001:3001"
+      - "3001:443"
     env_file:
       - .env
     networks:
