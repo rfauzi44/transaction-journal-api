@@ -4,8 +4,9 @@ Simple transaction notes with Express
 
 ## 🔥 Showcase
 
-- [Web Client Repository](https://github.com/rfauzi44/transaction-journal-web)
 - [Postman Docs](https://documenter.getpostman.com/view/25042327/2s93m7X2P3)
+- [Web Client Repository](https://github.com/rfauzi44/transaction-journal-web)
+- [DEMO WEB](https://transaction-journal-web.vercel.app)
 
 ## 💻 Built with
 
