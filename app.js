@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const server = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.APP_PORT || 3001;
 const db = require("./src/configs/db");
 const router = require("./src/routers/index");
 const cors = require("cors");
@@ -11,8 +11,6 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.use(router);
-
-console.log(PORT)
 
 db
   .connect()
