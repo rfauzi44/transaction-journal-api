@@ -12,6 +12,8 @@ server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.use(router);
 
+console.log(PORT)
+
 db
   .connect()
   .then(() => {
