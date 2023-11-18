@@ -6,7 +6,6 @@ const transaction = require("./router.transaction");
 
 routers.get("/", (req, res) => {
   const data = {
-    demo: "https://api-tj.zfdlzr.xyz",
     postman: "https://documenter.getpostman.com/view/25042327/2s93m7X2P3",
     repository: "https://github.com/rfauzi44/transaction-journal-api",
   };
